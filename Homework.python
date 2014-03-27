@@ -1,0 +1,32 @@
+# Week 1 - Homework #1 (Submitted by Deb Hart)
+
+# Exercise #1:
+#-------------
+first = "Deb"
+last = "Hart"
+age = "66"
+print first + " " + last, age
+
+# Exercise #2: 
+#-------------
+sideA = 12.55
+sideB = 17.85
+from math import sqrt
+sideC_sqr = (sideA * sideA) + (sideB * sideB)
+sideC = sqrt(sideC_sqr) 
+# print "sideC_Squared =", sideC_sqr (no need to display this, really...)
+print "sideC =", sideC 
+
+# Exercise #3:
+#-------------
+operand1 = 95
+operand2 = 64.5
+print "operand1 = ", operand1
+print "operand2 = ", operand2
+# print "operand1 + operand2 = ", operand1 + operand2 -- Less elegant/natural display solution
+print operand1, " + ", operand2, " = ", operand1 + operand2
+print operand1, " - ", operand2, " = ", operand1 - operand2
+print operand1, " * ", operand2, " = ", operand1 * operand2
+print operand1, " / ", operand2, " = ", operand1 / operand2
+print operand1, " mod ", operand2, " = ", operand1 % operand2
+# No re-write required to accomodate changes to operand values.
