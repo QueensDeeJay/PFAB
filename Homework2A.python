@@ -1,0 +1,25 @@
+# PgmName: Homework2A.python (March 29,2014: DJHart)
+
+import sys
+
+arg1 = int(sys.argv[1]) # Use int() function to convert strings coming from user via cmd line
+arg2 = int(sys.argv[2])
+arg3 = int(sys.argv[3])
+arg4 = int(sys.argv[4])
+
+## Note to Self: Insert code to check user's input for numbers ONLY. 
+
+avgGrade = (arg1+arg2+arg3+arg4)/4
+grade = "F"
+
+if avgGrade >= 90:
+        grade = "A"
+elif avgGrade >= 80:
+        grade = "B"
+elif avgGrade >= 70:
+        grade = "C"
+elif avgGrade == 60:
+        grade = "D"
+        
+print "Numeric Average Grade: ", avgGrade
+print "Letter Grade: ", grade

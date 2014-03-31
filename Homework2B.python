@@ -1,0 +1,8 @@
+# Homework2B.py - March 31, 2014: DJHart for PFAB, Mark Lassoff, Instructor
+
+price = input("Item Price: ")
+salesTax = input("Sales Tax Rate: ")
+
+Total = int(price) + ( int(price) * float(salesTax) )
+
+print "Total Bill (with Tax): $", Total
