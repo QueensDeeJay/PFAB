@@ -1,0 +1,42 @@
+# Title: Homework3B_Clean.python (April 6, 2014, by DJHart for PFAB, Instructor: Mark Lassoff)
+
+from collections import OrderedDict
+from operator import itemgetter
+import operator                   # added Apr 6, 2014 @ 3:27pm
+
+#---------------------------
+# Part 1 of 3: Print Class Roster w Average Grade per student
+#---------------------------
+
+pgmgClass = { "Lassoff" : 3.12, "Johnson" : 2.22, "Reich" : 3.59, "Honeychurch" : 2.98, "Maini" : 3.11, "Levin" : 2.88, "Marcus" : 2.77, "Banks" : 3.71 }
+
+print "\n", "-" * 7, "Names and GPAs", "-" * 32
+
+for n, g in pgmgClass.items():        # .items works, too
+    print "\tLast Name: %s\t GPA: %s" % (n, g)
+
+    
+#---------------------------  
+# Part 2 of 3: Calc overall class average
+#---------------------------
+
+numStudents = len(pgmgClass)
+
+print "\n", "-" * 7, "Overall Class Average", "-" * 25
+
+gpaSum = 0
+for g in pgmgClass:
+        gpaSum += float(pgmgClass[g])
+print " " * 7, "%0.2f " % (gpaSum/numStudents)
+
+#---------------------------
+# Part 3 of 3: Print Class Roster in Descending GPA Order
+#---------------------------
+
+print "\n", "-" * 7, "Rank by GPA, Highest to Lowest", "-" * 16
+
+students = sorted(pgmgClass.iteritems(), key=operator.itemgetter(1), reverse=True) # Sort by GPA
+x = 1
+for n, g in students:
+     print "\tRank #%d \t %s" % (x, n)
+     x = x + 1

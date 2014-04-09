@@ -1,0 +1,20 @@
+# Title: Homework3A.python March 31, 2014, by DJHart for PFAB, Instructor: Mark Lassoff
+
+Bradys = ["Mike", "Carol", "Marsha", "Jan", "Cindy", "Greg", "Peter", "Bobby", "Alice"]
+
+numBradys = len(Bradys)
+
+print "There are %s Bradys! " % numBradys
+
+i = 0
+while i < numBradys:
+	print Bradys[i]
+	i = i +1
+
+# Sorted (all names one 1 line)
+Bradys.sort()
+print Bradys
+
+# Sorted (one name per line)
+for x in Bradys:
+        print x
